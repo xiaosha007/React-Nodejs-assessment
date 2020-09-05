@@ -13,7 +13,6 @@ app.use(function(req, res, next) {
     next();
   });
 
-// connect to mongodb & listen for requests
 
 app.post('/wordCounts', function(req,res){
     fs.readFile(req.files.file.path, function(err, data){
