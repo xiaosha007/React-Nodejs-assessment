@@ -8,7 +8,10 @@ const Upload = () => {
     const {addFile,file,addResult}=useContext(FileContext);
 
     const uploadFile = () =>{
-        if(file==null || !file.name.endsWith(".txt"))return;
+        if(file==null || !file.name.endsWith(".txt")){
+            alert("Please upload a .txt file");
+            return;
+        }
         const formData = new FormData();
         formData.append('file', file);
         const config = {
