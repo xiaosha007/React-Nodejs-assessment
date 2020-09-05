@@ -4,5 +4,4 @@
 # The frontend folder contains all the react code for front end
 
 # Before running both server and frontend, please run npm i to install all the necessary modules
-# enter npm start in terminal to start
 
